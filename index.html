@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>chessboard</title>
+        <style>
+        table.chessboard{
+            margin:  auto;
+            text-align: center;
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+         td.chessboard{
+             width: 70px ; height: 70px;
+            }
+        tr.chessboard:nth-child(odd) td.chessboard:nth-child(even),
+        tr.chessboard:nth-child(even) td.chessboard:nth-child(odd){
+            background: #ada9a9;
+        }
+            td.top{
+                height: 30px;
+                transform: rotate(180deg);
+            }
+            td.right{
+                width: 30px;
+            }
+            td.left{
+                width: 30px;
+                transform: rotate(180deg);
+            }
+            td.bottom{
+                height: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <table class="chessboard">
+                <tr class="top">
+                    <td class="top"></td>
+                    <td class="top">A</td>
+                    <td class="top">B</td>
+                    <td class="top">C</td>
+                    <td class="top">D</td>
+                    <td class="top">E</td>
+                    <td class="top">F</td>
+                    <td class="top">G</td>
+                    <td class="top">H</td>
+                    <td class="top"></td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">8</td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9820;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9822;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9821;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9819;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9818;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9821;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9822;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9820;</span></td>
+                    <td class="left">8</td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">7</td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9823;</span></td>
+                    <td class="left">7</td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">6</td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="left">6</td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">5</td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="left">5</td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">4</td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="left">4</td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">3</td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="chessboard"></td>
+                    <td class="left">3</td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">2</td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9817;</span></td>
+                    <td class="left">2</td>
+                </tr>
+                <tr class="chessboard">
+                    <td class="right">1</td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9814;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9816;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9815;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9813;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9812;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9815;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9816;</span></td>
+                    <td class="chessboard"><span style="font-size:300%;">&#9814;</span></td>
+                    <td class="left">1</td>
+                </tr>
+                <tr class="bottom">
+                    <td class="bottom"></td>
+                    <td class="bottom">A</td>
+                    <td class="bottom">B</td>
+                    <td class="bottom">C</td>
+                    <td class="bottom">D</td>
+                    <td class="bottom">E</td>
+                    <td class="bottom">F</td>
+                    <td class="bottom">G</td>
+                    <td class="bottom">H</td>
+                    <td class="bottom"></td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>
